@@ -1,0 +1,48 @@
+{
+  "name": "min-1px",
+  "version": "1.0.0",
+  "description": "A 1 pixel transparent min image.",
+  "main": "dist/min-1px.cjs.js",
+  "module": "dist/min-1px.esm.js",
+  "unpkg": "dist/min-1px.js",
+  "jsdelivr": "dist/min-1px.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "lint": "npx eslint src && npx prettier --check src",
+    "lint:fix": "npx eslint --fix src && npx prettier --check --write src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lete114/min-1px.git"
+  },
+  "keywords": [
+    "1px",
+    "gif",
+    "png",
+    "min",
+    "image",
+    "base64",
+    "1 pixel",
+    "transparent"
+  ],
+  "author": "Lete乐特",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lete114/min-1px/issues"
+  },
+  "homepage": "https://github.com/Lete114/min-1px#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@rollup/plugin-babel": "^5.3.1",
+    "eslint": "^8.16.0",
+    "prettier": "^2.6.2",
+    "rollup": "^2.75.5",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}

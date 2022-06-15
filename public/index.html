@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="min-1px.js"></script>
+    <style>
+      * {
+        margin: 0;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background: #816797;
+      }
+      img {
+        height: 100px;
+        margin: 10px;
+        opacity: 0.5;
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Please press f12 to open the console to view</div>
+    <div id="imgs"></div>
+    <script>
+      createImage('1px.gif', '1px.gif')
+      createImage('1px.png', '1px.png')
+      createImage(px.GIF, 'GIF')
+      createImage(px.PNG, 'PNG')
+      function createImage(src, type) {
+        const img = document.createElement('img')
+        img.src = src
+        img.alt = type + ' base64'
+        img.title = type + ' base64'
+        img.onerror = function () {
+          img.onerror = null
+          console.error(type, 'faild')
+        }
+        document.getElementById('imgs').appendChild(img)
+      }
+    </script>
+  </body>
+</html>
